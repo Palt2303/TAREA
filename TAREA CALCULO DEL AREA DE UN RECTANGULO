@@ -1,0 +1,31 @@
+# Programa para calcular el área de un rectángulo
+
+def calcular_area_rectangulo(largo, ancho):
+    """
+    Esta función calcula el área de un rectángulo dado su largo y ancho.
+    
+    Parámetros:
+    - largo (float): Longitud del rectángulo.
+    - ancho (float): Ancho del rectángulo.
+    
+    Retorna:
+    - float: El área calculada del rectángulo.
+    """
+    area = largo * ancho
+    return area
+
+# Función principal para ejecutar el programa
+def main():
+    # Solicitar al usuario que ingrese el largo y ancho del rectángulo
+    largo = float(input("Ingrese el largo del rectángulo: "))
+    ancho = float(input("Ingrese el ancho del rectángulo: "))
+    
+    # Calcular el área del rectángulo usando la función definida
+    area_rectangulo = calcular_area_rectangulo(largo, ancho)
+    
+    # Mostrar el resultado
+    print(f"El área del rectángulo con largo {largo} y ancho {ancho} es: {area_rectangulo}")
+
+# Llamar a la función principal para ejecutar el programa
+if __name__ == "__main__":
+    main()
